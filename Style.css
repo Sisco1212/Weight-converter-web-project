@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 0 1em;
+}
+
+@font-face {
+    font-family: Poppins-Black;
+    src: url(Poppins-Black.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(Poppins-Regular.ttf);
+}
+
+.container {
+ margin-top: 3.5em;
+}
+
+.container .row .title {
+    background-color: #e2f26b;
+    padding: 1em 5em;
+    border-radius: 20px;
+    box-shadow: 8px 8px 2px #aaa;
+}
+
+.container .row .title h1{
+    color: #333;
+    font-family: Poppins-Black;
+    font-size: 2rem;
+    text-align: center;
+}
+
+form .info {
+    background-color:#a8a0d9;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: .8rem;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Poppins-Regular;
+}
+
+form .input-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+form .input-area label {
+    font-size: .85rem;
+    margin-bottom: .55em;
+    font-family: Poppins-Regular;
+}
+
+form .input-area input {
+    height: 38px;
+    padding: .5em;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    font-family: Poppins-Regular;
+}
+
+@media only screen and (max-width: 768px) {
+    .container .row .title {
+    padding: 1em 2em;
+    }
+       
+}
+
+@media only screen and (max-width: 400px) {
+    .container .row .title h1 {
+    font-size: 1.7rem;
+    }
+       
+}
